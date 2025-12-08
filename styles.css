@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
+    background: #ffffff;
     overflow: hidden;
     position: relative;
 }
@@ -34,28 +34,9 @@ body {
     z-index: 2;
 }
 
-.circle {
-    width: 80px;
-    height: 80px;
-    background-color: #d3d3d3;
-    border-radius: 50%;
-    position: relative;
-    z-index: 3;
-    box-shadow: 0 0 20px rgba(211, 211, 211, 0.3),
-                0 0 40px rgba(211, 211, 211, 0.2);
-    transition: all 0.3s ease;
-}
-
-.circle:hover {
-    box-shadow: 0 0 30px rgba(211, 211, 211, 0.5),
-                0 0 60px rgba(211, 211, 211, 0.3),
-                0 0 90px rgba(211, 211, 211, 0.2);
-    transform: scale(1.05);
-}
-
 .ring {
     position: absolute;
-    border: 1px solid rgba(211, 211, 211, 0.2);
+    border: 1px solid rgba(50, 50, 50, 0.2);
     border-radius: 50%;
     pointer-events: none;
 }
@@ -96,11 +77,6 @@ body {
         height: 300px;
     }
 
-    .circle {
-        width: 60px;
-        height: 60px;
-    }
-
     .ring-1 {
         width: 120px;
         height: 120px;
@@ -121,11 +97,6 @@ body {
     .container {
         width: 250px;
         height: 250px;
-    }
-
-    .circle {
-        width: 50px;
-        height: 50px;
     }
 
     .ring-1 {
