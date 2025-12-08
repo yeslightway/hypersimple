@@ -15,69 +15,6 @@ body {
     position: relative;
 }
 
-/* Geometric floating shapes */
-.shape {
-    position: absolute;
-    opacity: 0.6;
-    animation: float 20s ease-in-out infinite;
-}
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 52px solid #e0e0e0;
-    top: 20%;
-    left: 15%;
-    animation: float 25s ease-in-out infinite, rotate 40s linear infinite;
-}
-
-.square {
-    width: 40px;
-    height: 40px;
-    background: #d0d0d0;
-    top: 70%;
-    right: 20%;
-    animation: float 30s ease-in-out infinite reverse, rotate 50s linear infinite reverse;
-}
-
-.hexagon {
-    width: 50px;
-    height: 43.3px;
-    background: #c8c8c8;
-    position: absolute;
-    top: 40%;
-    right: 10%;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    animation: float 35s ease-in-out infinite, rotate 60s linear infinite;
-}
-
-.small-circle {
-    width: 30px;
-    height: 30px;
-    background: #d8d8d8;
-    border-radius: 50%;
-    top: 15%;
-    right: 30%;
-    animation: float 22s ease-in-out infinite reverse;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0) translateX(0);
-    }
-    25% {
-        transform: translateY(-20px) translateX(10px);
-    }
-    50% {
-        transform: translateY(-10px) translateX(-10px);
-    }
-    75% {
-        transform: translateY(-30px) translateX(5px);
-    }
-}
-
 .container {
     position: relative;
     width: 400px;
